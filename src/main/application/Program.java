@@ -1,6 +1,6 @@
-package main;
+package main.application;
 
-import views.GamePanel;
+import main.views.GamePanel;
 
 import javax.swing.JFrame;
 
@@ -18,5 +18,9 @@ public class Program {
 
         window.setLocationRelativeTo(null);
         window.setVisible(true);
+
+        gamePanel.startGameThread();
     }
+
+
 }
